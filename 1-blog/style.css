@@ -1,0 +1,47 @@
+body {
+    background-color: #374151;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+header a {
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 18.75px;
+    text-decoration: none;
+}
+
+.myBlogText {
+    font-size: 18px;
+    line-height: 21.09px;
+}
+
+header input {
+    color: #FFFFFF;
+    background-color: #1F293799;;
+}
+
+.authorName, footer {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.authorRole {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+section > p {
+    font-size: 14px;
+    line-height: 16.41px;
+}
+
+.summaryText {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.articleText {
+    font-size: 16px;
+    line-height: 30px;
+}
