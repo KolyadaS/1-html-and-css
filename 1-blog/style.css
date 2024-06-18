@@ -4,6 +4,10 @@ body {
     font-weight: 400;
 }
 
+header {
+    padding: 80px 0 80px 0;
+}
+
 header a {
     color: #FFFFFF;
     font-size: 16px;
@@ -11,19 +15,64 @@ header a {
     text-decoration: none;
 }
 
-.myBlogText {
-    font-size: 18px;
-    line-height: 21.09px;
+header li {
+    list-style-type: none;
 }
 
 header input {
     color: #FFFFFF;
-    background-color: #1F293799;;
+    background-color: #1F293799;
+    padding: 9px 0 12px 49px;
+    border-radius: 20px;
+    border-style: none;
+}
+
+.vkLogo::before {
+    content: url(./images/B.svg);
+    width: 35px;
+    height: 35px;
+    padding: 6px 12px 6px 12px;
+    margin: 0 11px 0 0;
+    background-color: #4B5563;
+    border-radius: 3px;
+}
+
+.searchFieldIcon::before {
+    content: url(./images/search.svg);
+}
+
+main {
+    padding: 0 0 69px 0;
+}
+
+section > p {
+    padding: 0 0 14px 0;
+}
+
+h1 {
+    padding: 0 0 30px 0;
+}
+
+.authorName, .authorRole {
+    margin: 0;
+}
+
+.authorPhotoNameRole {
+    padding: 0 0 31px 0;
+}
+
+.mainPicture {
+    padding: 0 0 69px 0;
 }
 
 .authorName, footer {
     font-size: 16px;
     line-height: 28px;
+}
+
+.myBlogText {
+    font-size: 18px;
+    line-height: 21.09px;
 }
 
 .authorRole {
