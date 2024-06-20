@@ -1,20 +1,27 @@
 body {
     background-color: #F39494;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
 }
 
 main {
     background-color: #FFFEFE;
+    width: 394px;
+    border-radius: 10px;
+    padding: 72px 94px 91px 94px;
+    margin: 225px auto;
 }
 
 h1 {
     font-size: 36px;
     font-weight: 700;
     line-height: 49.03px;
+    margin: 0;
 }
 
 p {
     color: #666666;
+    margin: 0 0 47px 0;
 }
 
 a {
@@ -26,10 +33,23 @@ a {
 
 input {
     color: #999999;;
+    background-color: #F5F5F5;
+    border-radius: 5px;
+    border-style: none;
     font-style: italic;
     font-size: 16px;
     line-height: 21.79px;
     font-weight: 400;
+    padding: 9px 11px;
+    margin-bottom: 22px;
+}
+
+input:focus {
+    color: #000000;
+    background-color: #FFFFFF;
+    outline: 1px solid #F5F5F5;
+    font-weight: 600;
+    font-style: normal;
 }
 
 button {
@@ -38,10 +58,25 @@ button {
     font-size: 18px;
     font-weight: 400;
     line-height: 24.51px;
+    padding: 9px 102px;
+    margin: 0 0 22px 0;
+    border-radius: 5px;
+    border-style: none;
 }
+
+/* .submitButton:after {
+    content: url(./images/Arrow.svg);
+    border: 1px solid red;
+} */
 
 label {
     color: #666666;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.07px;
+}
+
+label a {
     font-size: 14px;
     font-weight: 400;
     line-height: 19.07px;
