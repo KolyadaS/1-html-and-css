@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>Блог</title>
   </head>
 
@@ -12,21 +18,22 @@
       <nav>
         <ul>
           <li>
-            <span class="vkLogo"></span>
-            <a href="#" class="myBlogText">Мой блог</a>
+            <a href="#" class="myBlogText"
+              ><span class="vkLogo"></span>Мой блог</a
+            >
           </li>
           <li><a href="#">HTML и CSS</a></li>
           <li><a href="#">Frontend</a></li>
           <li><a href="#">Backend</a></li>
+          <li class="searchFieldIcon">
+            <input
+              type="search"
+              name="search"
+              id="searchField"
+              placeholder="Поиск"
+            />
+          </li>
         </ul>
-        <div class="searchFieldIcon">
-          <input
-            type="search"
-            name="search"
-            id="searchField"
-            placeholder="Поиск"
-          />
-        </div>
       </nav>
     </header>
 
@@ -36,9 +43,9 @@
           FRONTEND &bull; <time datetime="2024-05-12">12 мая 2024</time>
         </p>
 
-        <h1>Теория цвета - Как цвет влияет на поведение потребителей</h1>
+        <h1>Теория цвета - Как цвет влияет на поведение</br> потребителей</h1>
         <div class="authorPhotoNameRole">
-          <div>
+          <div class="authorPhoto">
             <img
               src="./images/headshot.png"
               alt="Аватарка Натальи Васильевой"
@@ -56,7 +63,8 @@
             alt="Изображение монитора с ярким абстрактным фоном"
           />
         </div>
-        <p class="summaryText">
+        <div class="article">
+<p class="summaryText">
           Теория цвета — это особенности эмоционального восприятия человеком тех
           или иных цветовых решений. Цвета и различные их комбинации влияют на
           психику человека, а значит, во многом определяют его поведение.
@@ -80,6 +88,7 @@
           продукта) дают положительную или отрицательную оценку товару,
           основываясь только на его цвете.
         </p>
+        </div>
       </section>
     </main>
 

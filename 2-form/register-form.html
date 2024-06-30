@@ -9,13 +9,12 @@
   <body>
     <main>
       <section>
-        <h1>Регистрация</h1>
-        <p>
-          Уже есть аккаунт?
-          <a href="#">Войти</a>
-        </p>
-
         <form action="" method="get">
+          <div class="formTitle">
+            <h1>Регистрация</h1>
+            <p>Уже есть аккаунт? <a href="#">Войти</a></p>
+          </div>
+
           <div>
             <label for="company">Компания</label>
             <input
@@ -26,7 +25,7 @@
             />
           </div>
 
-          <div>
+          <div class="nameAndSurname">
             <label for="name">Имя</label>
             <input type="text" name="name" id="name" placeholder="Имя" />
             <label for="surname">Фамилия</label>
@@ -53,7 +52,7 @@
             <button type="submit">Зарегистрироваться</button>
           </div>
 
-          <div>
+          <div class="agreeCheckbox">
             <input
               type="checkbox"
               name="agree"
