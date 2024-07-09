@@ -1,0 +1,21 @@
+:root {
+  --color-text-basic: #000000;
+  --color-text-middle: #4e5d7c;
+  --color-text-light: #4e5d7c80;
+  --color-text-extra-light: #ffffff;
+  --color-shadow: #4e5d7c29;
+
+  --color-secondary-1: #1abc9c;
+  --color-secondary-2: #357efe;
+  --color-secondary-3: #ffc736;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
