@@ -1,38 +1,19 @@
-:root {
-  --color-text-basic: #000000;
-  --color-text-middle: #4e5d7c;
-  --color-text-light: #4e5d7c80;
-  --color-text-extra-light: #ffffff;
-  --color-shadow: #4e5d7c29;
-
-  --color-primary: #357efe;
-  --color-secondary-1: #1abc9c;
-  /* --color-secondary-2: #357efe; */
-  --color-secondary-2: #ffc736;
-
-  --max-width: 1393px;
+.dark {
+  background-color: #357efe;
+}
+.light {
+  background-color: white;
 }
 
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-}
-
-/* Шрифты */
-
-.title_big-light {
+/* ******* */
+.title-big-light {
   font-size: 48px;
   font-weight: 600;
   line-height: 57.6px;
   color: #ffffff;
 }
 
-.title_big-dark {
+.title-big-dark {
   font-size: 48px;
   font-weight: 600;
   line-height: 57.6px;
@@ -41,14 +22,14 @@ body {
 
 /* 888888888888888888888 */
 
-.title_middle-light {
+.title-middle-light {
   font-size: 40px;
   font-weight: 800;
   line-height: 48px;
   color: #ffffff;
 }
 
-.title_middle-dark {
+.title-middle-dark {
   font-size: 40px;
   font-weight: 600;
   line-height: 48px;
@@ -57,14 +38,14 @@ body {
 
 /* 88888888888888888888888888888888888 */
 
-.title_small-dark {
+.title-small-dark {
   font-size: 32px;
   font-weight: 600;
   line-height: 38.4px;
   color: #000000;
 }
 
-.title_small-dark-bolder {
+.title-small-dark-bolder {
   font-size: 32px;
   font-weight: 800;
   line-height: 38.4px;
@@ -73,14 +54,14 @@ body {
 
 /* 8888888888888888888888888888888 */
 
-.text_big-dark {
+.text-big-dark {
   font-size: 24px;
   font-weight: 700;
   line-height: 28.8px;
   color: #000000;
 }
 
-.text_big-light {
+.text-big-light {
   font-size: 24px;
   font-weight: 700;
   line-height: 28.8px;
@@ -89,7 +70,7 @@ body {
 
 /* 888888888888888888888888888 */
 
-.text_middle-light {
+.text-middle-light {
   font-size: 18px;
   font-weight: 500;
   line-height: 25.2px;
@@ -97,7 +78,7 @@ body {
   opacity: 80%;
 }
 
-.text_middle-dark {
+.text-middle-dark {
   font-size: 18px;
   font-weight: 500;
   line-height: 25.2px;
@@ -106,14 +87,14 @@ body {
 
 /* 8888888888888888888888888888888 */
 
-.text_small-light-yellow-mark {
+.text-small-light-yellow-mark {
   font-size: 17px;
   font-weight: 700;
   line-height: 20.4px;
   color: #ffffff;
 }
 
-.text_button {
+.text-button {
   font-size: 17px;
   font-weight: 800;
   line-height: 23.8px;
@@ -122,37 +103,30 @@ body {
 
 /* 99999999999999999999 */
 
-.text_small-light {
+.text-small-light {
   font-size: 17px;
   font-weight: 500;
   line-height: 20.4px;
   color: #ffffff;
 }
 
-.text_small-light-footer {
+.text-small-light-footer {
   font-size: 17px;
   font-weight: 500;
   line-height: 20.4px;
   color: #ffffffb2;
 }
 
-.text_small-light-faded {
+.text-small-light-shadow {
   font-size: 17px;
   font-weight: 500;
   line-height: 23.8px;
   color: #ffffffcc;
 }
 
-.text_small-dark-faded {
+.text-small-dark-shadow {
   font-size: 17px;
   font-weight: 500;
   line-height: 23.8px;
-  color: var(--color-text-light);
-}
-
-.text_xsmall {
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 21px;
-  color: var(--color-text-extra-light);
+  color: #4e5d7c80;
 }

@@ -1,3 +1,17 @@
+/* *********   Возможности   ********** */
+
+.capabilities {
+  max-width: var(--max-width);
+  margin: 80px auto;
+  border: 1px solid slateblue;
+}
+
+@media (max-width: 1440px) {
+  .capabilities {
+    margin: 63px 23px 0 24px;
+  }
+}
+
 /* Тарифы */
 
 .plans {

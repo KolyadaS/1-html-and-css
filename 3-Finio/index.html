@@ -17,17 +17,85 @@
     <title>Finio</title>
   </head>
   <body>
-    <header>Меню</header>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__menu">
+          <a href="#"
+            ><img class="logo" src="./images/finio.svg" alt="Логотип Finio"
+          /></a>
+          <nav>
+            <ul class="menu">
+              <li class="menu__item"><a href="#capabilities">Возможности</a></li>
+              <li class="menu__item"><a href="#plans">Тарифы</a></li>
+              <li class="menu__item"><a href="#feedback">Отзывы</a></li>
+              <li class="menu__item"><a href="#support">Поддержка клиентов</a></li>
+            </ul>
+          </nav>
+          <button class="button button_light menu__button">
+            Личный кабинет
+          </button>
+          <button class="menu__mobile-menu">
+            <img src="./images/mobile-menu.svg" alt="Мобильное меню" />
+          </button>
+        </div>
+        <hr class="menu__hr" />
+
+        <div class="header__hero">
+          <div class="hero">
+            <h1 class="hero__title">
+              Простой финансовый учёт для продавцов на маркетплейсах
+            </h1>
+            <button class="button button_light header__button">
+              Попробовать 14 дней бесплатно
+            </button>
+            <div>
+              <img src="./images/logos.svg" alt="Логотипы партнеров" />
+            </div>
+          </div>
+          <div class="header__image">
+            <img src="./images/hero.png" alt="Главное изображение Finio" />
+          </div>
+        </div>
+
+ <section class="benefits">
+          <div class="header__benefits">
+          <div class="benefit">
+            <div class="benefit_img">
+              <img src="./images/benefit1.svg" alt="Значок гистограммы" />
+            </div>
+            <div>Анализ прибыли по товарам и брендам</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit_img">
+              <img src="./images/benefit2.svg" alt="Значок Wildberries" />
+            </div>
+            <div>Автоматический учёт доходов Wildberries</div>
+          </div>
+          <div class="benefit">
+            <div class="benefit_img">
+              <img src="./images/benefit3.svg" alt="Значок рубля" />
+            </div>
+            <div>От 990 рублей в месяц с&nbsp;полным функционалом</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+</header>
+    
 
     <main>
+      <hr class="section_hr">
       <!-- *************************************** -->
-      <!-- Блок Основной -->
-      <section>Finio</section>
+      <!-- Блок Возможности -->
+        <section class="capabilities" id="capabilities">
+
+    </section>
 
       <!-- *************************************** -->
       <!-- Блок Тарифы -->
-      <section class="plans">
-        <h1 class="title">Тарифы</h1>
+      <section class="plans" id="plans">
+        <h2 class="title">Тарифы</h2>
         <p class="description">
           Все тарифы имеют полный функционал и отличаются только количеством
           месяцев и выгодой
@@ -39,7 +107,7 @@
               <div class="promo">
                 <span class="promo__mark hidden">Выгода</span>
               </div>
-              <h2 class="title plan__title">1 месяц</h2>
+              <h2 class="plan__title">1 месяц</h2>
               <p class="description description_plan">
                 Тариф подойдёт тем, кто ведёт краткосрочные проекты
               </p>
@@ -62,7 +130,7 @@
               <div class="promo">
                 <span class="promo__mark">Выгода <b>25%</b></span>
               </div>
-              <h2 class="title plan__title">6 месяцев</h2>
+              <h2 class="plan__title">6 месяцев</h2>
               <p class="description description_plan">
                 Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт
               </p>
@@ -87,7 +155,7 @@
               <div class="promo">
                 <span class="promo__mark">Выгода <b>50%</b></span>
               </div>
-              <h2 class="title plan__title">12 месяцев</h2>
+              <h2 class="plan__title">12 месяцев</h2>
               <p class="description description_plan">
                 Тариф подойдёт для тех, кто уверенно ведёт финансовый учёт и
                 хочет сэкономить
@@ -112,7 +180,12 @@
 
       <!-- *************************************** -->
       <!-- Блок Отзывы -->
-      <section>Отзывы</section>
+      <section id="feedback">Отзывы</section>
+      
+      <!-- **************************************** -->
+      <!-- Блок Поддержка -->
+      <section id="support">Поддержка</section>
+
     </main>
 
     <footer>Футер</footer>
