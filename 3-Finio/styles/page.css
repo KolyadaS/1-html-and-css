@@ -3,13 +3,132 @@
 .capabilities {
   max-width: var(--max-width);
   margin: 80px auto;
-  border: 1px solid slateblue;
+  /* border: 1px solid slateblue; */
+}
+
+.capabilities__wrapper_1 {
+  margin-bottom: 120px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 65px;
+}
+
+.capability {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 65px;
+}
+
+.capability__desc,
+.capability__img {
+  width: 50%;
+}
+
+.capability__desc_h2 {
+  margin: 0 0 24px;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+}
+
+.capability__desc_p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  color: var(--color-text-middle);
+  opacity: 0.5;
+}
+
+.capability__desc_1,
+.capability__desc_3 {
+  padding-left: 118px;
+}
+
+.capability__desc_2,
+.capability__desc_4 {
+  padding-right: 118px;
+}
+
+.capability__img img {
+  width: 100%;
+}
+
+.img__wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.capability__img_main {
+  width: 70%;
+}
+
+.capability__img_extra {
+  width: 70%;
+  position: absolute;
+  left: 25%;
+  top: 23%;
+}
+
+.capabilities__wrapper_1 .section_hr {
+  height: 1px;
+  width: 100%;
 }
 
 @media (max-width: 1440px) {
-  .capabilities {
+  /* .capabilities {
     margin: 63px 23px 0 24px;
+  } */
+  main {
+    margin: 0 23px 0 24px;
   }
+}
+
+@media (max-width: 1120px) {
+  .capabilities__wrapper_1 {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
+  .capability {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    gap: 32px;
+  }
+
+  .capability__desc {
+    width: 100%;
+  }
+
+  .capability__img {
+    width: 100%;
+  }
+
+  .capability__desc_1,
+  .capability__desc_2,
+  .capability__desc_3,
+  .capability__desc_4 {
+    padding: 0;
+  }
+
+  .capability__desc_h2 {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 38.4px;
+  }
+
+  .capabilities__wrapper_1 .section_hr {
+    grid-column: 1;
+  }
+}
+
+/* *********************************** */
+.capabilities__wrapper_2 {
+  border: 1px solid red;
 }
 
 /* Тарифы */

@@ -20,9 +20,16 @@
 .section_hr {
   max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0;
   border: 1px solid var(--color-text-middle);
   opacity: 0.08;
   transform: scaleY(0.5);
+}
+
+@media (max-width: 1440px) {
+  .section_hr {
+    padding: 0 23px 0 24px;
+  }
 }
 
 /* Тарифы */
