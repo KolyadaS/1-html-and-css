@@ -6,7 +6,7 @@
   /* border: 1px solid slateblue; */
 }
 
-.capabilities__wrapper_1 {
+.capabilities__wrapper-1 {
   margin-bottom: 120px;
   display: grid;
   grid-template-columns: 1fr;
@@ -73,7 +73,7 @@
   top: 23%;
 }
 
-.capabilities__wrapper_1 .section_hr {
+.capabilities__wrapper-1 .section_hr {
   height: 1px;
   width: 100%;
 }
@@ -82,13 +82,13 @@
   /* .capabilities {
     margin: 63px 23px 0 24px;
   } */
-  main {
+  .capabilities {
     margin: 0 23px 0 24px;
   }
 }
 
 @media (max-width: 1120px) {
-  .capabilities__wrapper_1 {
+  .capabilities__wrapper-1 {
     grid-template-columns: 1fr;
     gap: 48px;
   }
@@ -121,14 +121,148 @@
     line-height: 38.4px;
   }
 
-  .capabilities__wrapper_1 .section_hr {
+  .capabilities__wrapper-1 .section_hr {
     grid-column: 1;
   }
 }
 
 /* *********************************** */
-.capabilities__wrapper_2 {
+.capabilities__bg_colored {
+  width: 100%;
+  border: 1px solid blue;
+  background: var(--color-primary);
+  color: var(--color-text-extra-light);
+}
+
+.capabilities__wrapper-2 {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  margin: 120px 0;
   border: 1px solid red;
+  text-align: center;
+}
+
+.wrapper-2__h2 {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 57.6px;
+}
+
+.wrapper-2__p {
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25.2px;
+  opacity: 0.8;
+}
+
+.wrapper-2__button {
+  margin-bottom: 64px;
+}
+
+/* слайдер с картинками  */
+
+.pic-slider__wrapper {
+  margin-bottom: 64px;
+  max-width: 1156px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* border: 1px solid burlywood; */
+  text-align: center;
+}
+
+.wrapper-2__img_1 {
+  max-width: 598px;
+  max-height: 640px;
+  /* position: absolute; */
+  /* border: 1px solid saddlebrown; */
+}
+
+.wrapper-2__img_2 img {
+  transform: scale(0.95);
+}
+
+.wrapper-2__img_2 {
+  max-width: 598px;
+  max-height: 640px;
+  /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+  border: 1px solid pink;
+}
+.wrapper-2__img_2 img {
+  transform: scale(40%);
+}
+
+.wrapper-2__comparison {
+  max-width: 920px;
+  margin: 0 auto;
+  /* border: 1px solid rebeccapurple; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 24px;
+  text-align: left;
+}
+
+.product_h3 {
+  margin: 0 0 24px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+.product_ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  opacity: 0.8;
+}
+
+.product_li {
+  margin-bottom: 24px;
+}
+
+.li_exclamation::before {
+  content: url(../images/exclamation-circle.svg);
+  position: relative;
+  top: 5px;
+  right: 2.5px;
+}
+
+.li_check::before {
+  content: url(../images/check-circle.svg);
+  position: relative;
+  top: 5px;
+  right: 2.5px;
+}
+
+@media (max-width: 1440px) {
+  .capabilities__bg_colored {
+    padding: 0 23px 0 24px;
+  }
+}
+
+@media (max-width: 1120px) {
+}
+
+@media (max-width: 928px) {
+  .wrapper-2__h2 {
+    font-size: 36px;
+    line-height: 43.2px;
+  }
+
+  .capabilities__wrapper-2 {
+    margin: 64px 0;
+  }
+}
+
+@media (max-width: 375px) {
+  .wrapper-2__button {
+    margin-bottom: 48px;
+  }
 }
 
 /* Тарифы */
