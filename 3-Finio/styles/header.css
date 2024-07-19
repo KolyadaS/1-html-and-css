@@ -69,14 +69,6 @@
   height: 100%;
 }
 
-.menu__hr {
-  display: none;
-  margin: 0;
-  border: 1px solid var(--color-text-extra-light);
-  opacity: 0.16;
-  transform: scaleY(0.5);
-}
-
 .header__hero {
   display: grid;
   /* grid-template-columns: repeat(auto-fill, 33%); */
@@ -244,10 +236,6 @@
 
   .header__image > img {
     min-width: 300px;
-  }
-
-  .menu__hr {
-    display: block;
   }
 }
 
