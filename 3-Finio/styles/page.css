@@ -515,10 +515,9 @@
 }
 
 .feedback__wrapper {
-  /* border: 1px solid red; */
   max-width: 1156px;
   height: 438px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   background: var(--color-primary);
   box-shadow: 0px 0px 32px 0px #4e5d7c29;
   border-radius: 8px;
@@ -553,7 +552,7 @@
 }
 
 .feedback-data__role {
-  margin: 0 0 48px 0;
+  margin: 0;
   font-size: 17px;
   font-weight: 500;
   line-height: 23.8px;
@@ -576,14 +575,22 @@
   border: none;
 }
 
-.feedback__prev-next-buttons {
-  /* max-width: 1108px; */
-  max-width: 1156px;
+.feedback__buttons-wrapper {
   position: relative;
+}
+
+.feedback__buttons {
+  position: absolute;
+  bottom: 242px;
+  width: 100%;
+}
+
+.feedback__prev-next-buttons {
+  max-width: 1156px;
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  bottom: 270px;
 }
 
 .feedback__button {
@@ -613,7 +620,6 @@
   max-width: 50%;
   max-height: 100%;
   border-radius: 0 8px 8px 0;
-  /* clip-path: inset(22px 32px 31px 0px round 0 8px 8px 0); */
 }
 
 .feedback__img img {
@@ -622,25 +628,13 @@
   width: 100%;
 }
 
-@media (max-width: 1440px) {
-}
-
-@media (max-width: 1392px) {
-  /* .feedback__wrapper {
-    margin: 0 23px 0 24px;
-  } */
-}
-
 @media (max-width: 1203px) {
   .feedback__wrapper {
-    margin: 0 23px 0 24px;
+    margin: 0 23px 80px 24px;
   }
 }
 
-@media (max-width: 1193px) {
-}
-
-@media (max-width: 1154px) {
+@media (max-width: 1172px) {
   .feedback__h2 {
     padding: 0 23px 0 24px;
   }
@@ -649,7 +643,8 @@
     flex-direction: column-reverse;
     min-width: 328px;
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 64px;
+    /* margin: 0 auto 64px; */
     height: fit-content;
   }
 
@@ -669,7 +664,11 @@
     width: 100%;
   }
 
-  .feedback__prev-next-buttons {
+  .feedback-data__role {
+    margin-bottom: 48px;
+  }
+
+  .feedback__buttons-wrapper {
     display: none;
   }
 
@@ -683,9 +682,6 @@
     max-width: 100%;
     min-width: 328px;
   }
-}
-
-@media (max-width: 668px) {
 }
 
 @media (max-width: 375px) {
