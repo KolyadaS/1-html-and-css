@@ -1,4 +1,4 @@
-.title {
+/* .title {
   margin: 0 0 24px;
   font-size: 48px;
   font-weight: 600;
@@ -13,7 +13,7 @@
   line-height: 23.8px;
   color: var(--color-text-light);
   text-align: center;
-}
+} */
 
 /* Разделитель секций */
 
@@ -33,7 +33,7 @@
 }
 
 /* Тарифы */
-
+/* 
 .plan {
   height: 507px;
   padding: 48px 40px;
@@ -168,7 +168,7 @@
     padding-left: 24px;
     padding-right: 24px;
   }
-}
+} */
 
 /* Кнопки */
 
