@@ -83,7 +83,7 @@
     margin: 63px 23px 0 24px;
   } */
   .capabilities {
-    margin: 0 23px 0 24px;
+    /* margin: 0 23px 0 24px; */
   }
 }
 
@@ -268,13 +268,11 @@
 
 .capabilities__wrapper-3 {
   margin: 120px auto;
-  border: 1px solid yellow;
 }
 
 .pros__wrapper {
   margin: 0 auto 80px;
   max-width: 1342px;
-  /* border: 1px solid brown; */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(327px, 395px));
   justify-content: center;
@@ -307,7 +305,6 @@
 }
 
 .mobile__wrapper {
-  /* border: 1px solid red; */
   text-align: center;
 }
 
@@ -327,11 +324,15 @@
   opacity: 0.5;
 }
 
+.mobile__img-wrapper {
+  overflow: hidden;
+  min-width: 328px;
+}
+
 .mobile__img {
   margin: 0 auto;
   max-width: 1128px;
   min-width: 677.7px;
-  border: 1px solid red;
 }
 
 .mobile__img img {
@@ -344,15 +345,7 @@
   }
 }
 
-@media (max-width: 1120px) {
-}
-
 @media (max-width: 928px) {
-  /* .wrapper-2__h2 {
-    font-size: 36px;
-    line-height: 43.2px;
-  } */
-
   .capabilities__wrapper-3 {
     margin: 64px 0;
   }
@@ -367,9 +360,10 @@
 }
 
 @media (max-width: 375px) {
-  /* .wrapper-2__button {
-    margin-bottom: 48px;
-  } */
+  .mobile__h3,
+  .mobile__p {
+    text-align: left;
+  }
 }
 
 /* Поддержка */
