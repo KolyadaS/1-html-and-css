@@ -12,6 +12,7 @@
   /* --color-secondary-2: #357efe; */
   --color-secondary-2: #ffc736;
 
+  --min-width: 375px;
   --max-width: 1392px;
 }
 
