@@ -156,18 +156,6 @@ body {
     text-align: center;
   }
 
-  .hero__h1 {
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 38.4px;
-    margin-top: 32px;
-    margin-bottom: 32px;
-  }
-
-  .hero__button {
-    margin-bottom: 56px;
-  }
-
   .hero__banner {
     grid-column: 1 / 2;
   }
@@ -178,6 +166,9 @@ body {
 }
 
 @media (max-width: 1120px) {
+  .header {
+    margin-bottom: 48px;
+  }
   .menu__ul {
     display: none;
   }
@@ -195,6 +186,18 @@ body {
     text-align: center;
   }
 
+  .hero__h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .hero__button {
+    margin-bottom: 56px;
+  }
+
   .hero__partner-logos {
     max-width: 333px;
     margin: 0 auto;
@@ -205,16 +208,14 @@ body {
   }
 }
 
-@media (max-width: 928px) {
-  .logo {
-    width: 65px;
-    height: 34px;
-  }
-}
-
 @media (max-width: 565px) {
   .header__wrapper {
     padding: 28px 0 0 0;
+  }
+
+  .logo {
+    width: 65px;
+    height: 34px;
   }
 
   .header__hero {
@@ -245,9 +246,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 32px 64px;
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28.8px;
 }
 
 .benefit {
@@ -263,16 +261,25 @@ body {
   height: 64px;
 }
 
+.benefit__text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
 @media (max-width: 1120px) {
   .header__benefits {
     justify-content: center;
+  }
+
+  .benefit__text {
     font-size: 18px;
     font-weight: 700;
     line-height: 25.2px;
   }
 }
 
-@media (max-width: 928px) {
+@media (max-width: 941px) {
   .benefit__icon {
     width: 48px;
     height: 48px;

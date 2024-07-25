@@ -40,10 +40,16 @@
               </li>
             </ul>
           </nav>
-          <button class="button button_light menu__button">
+          <button
+            class="button button_light menu__button"
+            aria-label="Вход в личный кабинет"
+          >
             Личный кабинет
           </button>
-          <button class="menu__mobile-menu">
+          <button
+            class="menu__mobile-menu"
+            aria-label="Кнопка раскрывающегося меню"
+          >
             <img
               class="mobile-menu__img"
               src="./images/mobile-menu.svg"
@@ -90,7 +96,9 @@
                   alt="Значок гистограммы"
                 />
               </div>
-              <div>Анализ прибыли по товарам и брендам</div>
+              <div class="benefit__text">
+                Анализ прибыли по товарам и брендам
+              </div>
             </div>
             <div class="benefit">
               <div class="benefit__icon">
@@ -100,7 +108,9 @@
                   alt="Значок Wildberries"
                 />
               </div>
-              <div>Автоматический учёт доходов Wildberries</div>
+              <div class="benefit__text">
+                Автоматический учёт доходов Wildberries
+              </div>
             </div>
             <div class="benefit">
               <div class="benefit__icon">
@@ -110,7 +120,9 @@
                   alt="Значок рубля"
                 />
               </div>
-              <div>От 990 рублей в месяц с&nbsp;полным функционалом</div>
+              <div class="benefit__text">
+                От 990 рублей в месяц с&nbsp;полным функционалом
+              </div>
             </div>
           </div>
         </section>
@@ -119,12 +131,10 @@
 
     <main>
       <!-- *************************************** -->
-      <!-- Блок Возможности -->
+      <!-- Блок Возможности: первый -->
       <section class="capabilities" id="capabilities">
-        <hr class="section_hr" />
-
-        <!-- Блок Возможности: первый  -->
         <section class="capabilities__wrapper-1">
+          <hr class="hr hr_capabilities" />
           <div class="capability">
             <div class="capability__desc capability__desc_1">
               <h2 class="capability__desc_h2">
@@ -143,7 +153,7 @@
               />
             </div>
           </div>
-          <hr class="section_hr" />
+          <hr class="hr hr_capabilities" />
           <div class="capability">
             <div class="capability__img capability__img_2">
               <img
@@ -162,7 +172,7 @@
               </p>
             </div>
           </div>
-          <hr class="section_hr" />
+          <hr class="hr hr_capabilities" />
           <div class="capability">
             <div class="capability__desc capability__desc_3">
               <h2 class="capability__desc_h2">Какие товары приносят прибыль</h2>
@@ -178,7 +188,7 @@
               />
             </div>
           </div>
-          <hr class="section_hr" />
+          <hr class="hr hr_capabilities" />
           <div class="capability">
             <div class="capability__img capability__img_4">
               <div class="img__wrapper">
@@ -228,39 +238,42 @@
             />
 
             <div class="pic-slider__button-wrapper">
-              <button class="pic-slider__button"></button>
+              <button
+                class="pic-slider__button"
+                aria-label="Кнопка слайдера, сравнивающего скриншоты Finio и Excel"
+              ></button>
             </div>
           </div>
 
           <div class="compare__wrapper">
             <div class="compare__product">
-              <h3 class="product_h3">Excel</h3>
-              <ul class="product_ul">
-                <li class="product_li li_exclamation">
+              <h3 class="product__h3">Excel</h3>
+              <ul class="product__ul">
+                <li class="product__li li_exclamation">
                   Долгое внесение данных
                 </li>
-                <li class="product_li li_exclamation">
+                <li class="product__li li_exclamation">
                   Ручной ввод данных с маркетплейсов
                 </li>
-                <li class="product_li li_exclamation">
+                <li class="product__li li_exclamation">
                   Не удобная работа с телефона
                 </li>
-                <li class="product_li li_exclamation">
+                <li class="product__li li_exclamation">
                   Сложность восприятия итоговых данных
                 </li>
               </ul>
             </div>
             <div class="compare__product">
-              <h3 class="product_h3">FINIO</h3>
-              <ul class="product_ul">
-                <li class="product_li li_check">
+              <h3 class="product__h3">FINIO</h3>
+              <ul class="product__ul">
+                <li class="product__li li_check">
                   Внесение данных за пару кликов
                 </li>
-                <li class="product_li li_check">
+                <li class="product__li li_check">
                   Автоматическое получение данных по API
                 </li>
-                <li class="product_li li_check">Удобная мобильная версия</li>
-                <li class="product_li li_check">
+                <li class="product__li li_check">Удобная мобильная версия</li>
+                <li class="product__li li_check">
                   Наглядные отчеты, графики и таблицы
                 </li>
               </ul>
@@ -273,37 +286,49 @@
       <section class="capabilities__wrapper-3">
         <div class="pros__wrapper">
           <div class="pros">
-            <div class="pros__img">
-              <img src="./images/servers.svg" alt="Значок облачного сервера" />
+            <div class="pros__icon">
+              <img
+                class="pros__icon__img"
+                src="./images/servers.svg"
+                alt="Значок облачного сервера"
+              />
             </div>
             <h3 class="pros__h3">Надёжные сервера на территории России</h3>
-            <p class="pros_p">
+            <p class="pros__p">
               Никакие события не скажутся на бесперебойной работе сервиса.
             </p>
           </div>
           <div class="pros">
-            <div class="pros__img">
-              <img src="./images/ssl.svg" alt="Значок щита" />
+            <div class="pros__icon">
+              <img
+                class="pros__icon__img"
+                src="./images/ssl.svg"
+                alt="Значок щита"
+              />
             </div>
             <h3 class="pros__h3">Используем 256-битное SSL-шифрование</h3>
-            <p class="pros_p">
+            <p class="pros__p">
               Ваши данные не могут быть перехвачены, даже при использовании
               открытых Wi-Fi сетей
             </p>
           </div>
           <div class="pros">
-            <div class="pros__img">
-              <img src="./images/security.svg" alt="Значок замка" />
+            <div class="pros__icon">
+              <img
+                class="pros__icon__img"
+                src="./images/security.svg"
+                alt="Значок замка"
+              />
             </div>
             <h3 class="pros__h3">Не передаём ваши данные 3-им лицам</h3>
-            <p class="pros_p">
+            <p class="pros__p">
               Все данные о доходах и расходах компании видны только вам и тем,
               кому вы открыли доступ
             </p>
           </div>
         </div>
-        <hr class="section_hr" />
         <div class="mobile__wrapper">
+          <hr class="hr hr_mobile" />
           <h3 class="mobile__h3">Мобильная версия</h3>
           <p class="mobile__p">
             Пользоваться всем функционалом сервиса удобно в любом месте и с
@@ -319,14 +344,14 @@
           </div>
         </div>
       </section>
-      <!-- </section> -->
 
       <!-- **************************************** -->
       <!-- Блок Поддержка -->
       <section id="support">
         <div class="support__wrapper">
-          <div class="support__img">
+          <div class="support__img-wrapper">
             <img
+              class="support__img"
               src="./images/support.png"
               alt="Изображение девушки, сложившей руками сердечко"
             />
@@ -340,13 +365,13 @@
             <div class="contacts__wrapper">
               <div class="contact contact__telegram">
                 <div class="contact__img">
-                  <img src="./images/telegram.svg" alt="Логотип Telegram" />
+                  <img src="./images/telegram.svg" alt="Иконка Telegram" />
                 </div>
                 <div class="contact__data">Telegram Finio</div>
               </div>
               <div class="contact contact__whatsapp">
                 <div class="contact__img">
-                  <img src="./images/whatsapp.svg" alt="Логотип WhatsApp" />
+                  <img src="./images/whatsapp.svg" alt="Иконка WhatsApp" />
                 </div>
                 <div class="contact__data">WhatsApp Finio</div>
               </div>
@@ -354,7 +379,7 @@
                 <div class="contact__img">
                   <img
                     src="./images/email.svg"
-                    alt="Логотип электронной почты"
+                    alt="Иконка электронной почты"
                   />
                 </div>
                 <div class="contact__data">hello@finio.ru</div>
@@ -382,7 +407,7 @@
           <div class="plan plan_1">
             <div class="plan__header">
               <div class="promo">
-                <span class="promo__mark hidden">Выгода 0</span>
+                <span class="promo__mark hidden"> </span>
               </div>
               <h2 class="plan__h2">1 месяц</h2>
               <p class="plan__p description_plan">
@@ -392,14 +417,19 @@
             <div class="plan__data">
               <div class="data__title">Общая стоимость</div>
               <div class="data__value">1 990 ₽</div>
-              <div class="data__hr"><hr /></div>
+              <div class="data__hr"><hr class="hr" /></div>
               <div class="data__title">Ваша выгода</div>
               <div class="data__value">0 ₽</div>
-              <div class="data__hr"><hr /></div>
+              <div class="data__hr"><hr class="hr" /></div>
               <div class="data__title">Стоимость месяца</div>
               <div class="data__value">1 990 ₽/мес</div>
             </div>
-            <button class="button">Бесплатно 14 дней</button>
+            <button
+              class="button"
+              aria-label="Кнопка, чтобы бесплатно попробовать тариф на 1 месяц в течение 14 дней"
+            >
+              Бесплатно 14 дней
+            </button>
           </div>
 
           <!-- Тарифы: карточка 2 -->
@@ -416,16 +446,21 @@
             <div class="plan__data">
               <div class="data__title">Общая стоимость</div>
               <div class="data__value">8 940 ₽</div>
-              <div class="data__hr"><hr /></div>
+              <div class="data__hr"><hr class="hr" /></div>
               <div class="data__title">Ваша выгода</div>
               <div class="data__value">
                 <span class="marked">3&nbsp;000&nbsp;₽</span>
               </div>
-              <div class="data__hr"><hr /></div>
+              <div class="data__hr"><hr class="hr" /></div>
               <div class="data__title">Стоимость месяца</div>
               <div class="data__value">1 490 ₽/мес</div>
             </div>
-            <button class="button">Бесплатно 14 дней</button>
+            <button
+              class="button"
+              aria-label="Кнопка, чтобы бесплатно попробовать тариф на 6 месяц в течение 14 дней"
+            >
+              Бесплатно 14 дней
+            </button>
           </div>
 
           <!-- Тарифы: карточка 3 -->
@@ -443,16 +478,21 @@
             <div class="plan__data">
               <div class="data__title">Общая стоимость</div>
               <div class="data__value">11 880 ₽</div>
-              <div class="data__hr"><hr /></div>
+              <div class="data__hr"><hr class="hr" /></div>
               <div class="data__title">Ваша выгода</div>
               <div class="data__value">
                 <span class="marked">12&nbsp;000&nbsp;₽</span>
               </div>
-              <div class="data__hr"><hr /></div>
+              <div class="data__hr"><hr class="hr" /></div>
               <div class="data__title">Стоимость месяца</div>
               <div class="data__value">990 ₽/мес</div>
             </div>
-            <button class="button button_light">Бесплатно 14 дней</button>
+            <button
+              class="button button_light"
+              aria-label="Кнопка, чтобы бесплатно попробовать тариф на 12 месяцев в течение 14 дней"
+            >
+              Бесплатно 14 дней
+            </button>
           </div>
         </div>
       </section>
@@ -466,7 +506,7 @@
             <div class="feedback-data">
               <h3 class="feedback-data__h2">
                 Впервые за долгое время увидела свои расходы и доходы как на
-                ладони
+                ладони.
               </h3>
               <p class="feedback-data__name">Дана Валеева</p>
               <p class="feedback-data__role">Продавец Wildberries</p>
@@ -475,25 +515,25 @@
                 <button class="carousel__button">
                   <img
                     src="./images/dot_active.svg"
-                    alt="Кнопка карусели изображений"
+                    alt="Кнопка 1 карусели изображений"
                   />
                 </button>
                 <button class="carousel__button">
                   <img
                     src="./images/dot_inactive.svg"
-                    alt="Кнопка карусели изображений"
+                    alt="Кнопка 2 карусели изображений"
                   />
                 </button>
                 <button class="carousel__button">
                   <img
                     src="./images/dot_inactive.svg"
-                    alt="Кнопка карусели изображений"
+                    alt="Кнопка 3 карусели изображений"
                   />
                 </button>
                 <button class="carousel__button">
                   <img
                     src="./images/dot_inactive.svg"
-                    alt="Кнопка карусели изображений"
+                    alt="Кнопка 4 карусели изображений"
                   />
                 </button>
               </div>
@@ -508,10 +548,16 @@
           <div class="feedback__buttons">
             <div class="feedback__prev-next-buttons">
               <button class="feedback__button feedback__button_prev">
-                <img src="./images/next.svg" alt="Кнопка назад" />
+                <img
+                  src="./images/next.svg"
+                  alt="Кнопка Назад для карусели изображений"
+                />
               </button>
               <button class="feedback__button feedback__button_next">
-                <img src="./images/next.svg" alt="Кнопка далее" />
+                <img
+                  src="./images/next.svg"
+                  alt="Кнопка Далее для карусели изображений"
+                />
               </button>
             </div>
           </div>
@@ -575,7 +621,7 @@
         <div class="footer__payment-systems">
           <img
             src="./images/payment-method.svg"
-            alt="Логотипы принимаемых платежных систем"
+            alt="Иконки принимаемых платежных систем"
           />
         </div>
       </div>
