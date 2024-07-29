@@ -1,13 +1,222 @@
-/* *********   Возможности: первый блок   ********** */
+/* *************   Hero  **************** */
 
+/* Hero: косой фон */
+body {
+  position: relative;
+}
+
+.hero-bg__wrapper {
+  position: absolute;
+  width: 100%;
+  height: 1012px;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  width: 200%;
+  left: -25%;
+  top: -54%;
+  height: 1000px;
+  background-color: var(--color-primary);
+  transform: rotate(-7deg);
+  overflow: hidden;
+  z-index: -10;
+}
+
+@media (min-width: 2000px) {
+  .hero-bg {
+    top: -55%;
+  }
+}
+
+@media (max-width: 565px) {
+  .hero-bg {
+    top: -55%;
+  }
+}
+
+/* *************   Hero   *******************  */
+.hero-section__wrapper {
+  padding: 55px 0 80px;
+}
+
+.hero__wrapper {
+  max-width: var(--max-width);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 464px));
+  justify-content: space-between;
+  margin: 0 auto 0;
+}
+
+.hero__h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 48px;
+  color: var(--color-text-extra-light);
+  margin: 16px 0 40px;
+  grid-column: 1 / 2;
+}
+
+.hero__button {
+  margin-bottom: 80px;
+}
+
+.hero__banner {
+  grid-column: 2 / 4;
+}
+
+.banner__img {
+  width: 112%;
+  min-width: 700px;
+}
+
+@media (max-width: 1632px) {
+  .banner__img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .hero-section__wrapper {
+    margin: 0 23px 0 24px;
+  }
+}
+
+@media (max-width: 1210px) {
+  .hero-section__wrapper {
+    padding: 0 0 48px;
+  }
+
+  .hero__wrapper {
+    grid-template-columns: auto;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 0;
+  }
+
+  .hero {
+    text-align: center;
+  }
+
+  .hero__banner {
+    grid-column: 1 / 2;
+  }
+
+  .banner__img {
+    min-width: 300px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .hero {
+    text-align: center;
+  }
+
+  .hero__h1 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 38.4px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+
+  .hero__button {
+    margin-bottom: 56px;
+  }
+
+  .hero__partner-logos {
+    max-width: 333px;
+    margin: 0 auto;
+  }
+
+  .partner-logos__img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 565px) {
+  .hero__wrapper {
+    margin-bottom: 130px;
+  }
+
+  .hero {
+    text-align: left;
+  }
+
+  .hero__partner-logos {
+    margin: 0;
+  }
+
+  .hero__banner {
+    display: none;
+  }
+}
+
+/* Hero: преимущества */
+.header__benefits {
+  max-width: var(--max-width);
+  min-width: 328px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(328px, 408px));
+  justify-content: center;
+  align-items: center;
+  gap: 32px 64px;
+}
+
+.benefit {
+  display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.benefit__icon {
+  width: 64px;
+  height: 64px;
+}
+
+.benefit__text {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28.8px;
+}
+
+@media (max-width: 1120px) {
+  .header__benefits {
+    justify-content: center;
+  }
+
+  .benefit__text {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+  }
+}
+
+@media (max-width: 941px) {
+  .benefit__icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .benefit__icon__img {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+/* *********   Возможности: первый блок   ********** */
 .capabilities {
   max-width: var(--max-width);
   min-width: var(--min-width);
-  margin: 0 auto;
+  margin: 0 auto 120px;
 }
 
 .capabilities__wrapper-1 {
-  margin: 80px 0 120px;
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 65px;
@@ -62,7 +271,7 @@
 }
 
 .capability__img_main {
-  width: 70%;
+  width: 80%;
 }
 
 .capability__img_extra {
@@ -74,15 +283,18 @@
 
 @media (max-width: 1440px) {
   .capabilities__wrapper-1 {
-    margin: 0 23px 120px 24px;
+    margin: 0 23px 0 24px;
   }
 }
 
 @media (max-width: 1120px) {
+  .capabilities {
+    margin-bottom: 48px;
+  }
+
   .capabilities__wrapper-1 {
     grid-template-columns: 1fr;
     gap: 48px;
-    margin: 48px 23px 48px 24px;
   }
 
   .hr_capabilities {
@@ -133,7 +345,7 @@
   }
 }
 
-/* ***Возможности: второй блок*** */
+/* ***********   Возможности: второй блок   ************* */
 .capabilities__bg_colored {
   width: 100%;
   background: var(--color-primary);
@@ -142,14 +354,14 @@
 
 .capabilities__wrapper-2 {
   max-width: var(--max-width);
-  margin: 120px auto;
+  margin: 0 auto;
+  padding: 120px 0;
   text-align: center;
 }
 
 .compare__h2 {
   margin: 0;
   margin-bottom: 24px;
-  padding-top: 120px;
   font-size: 48px;
   font-weight: 600;
   line-height: 57.6px;
@@ -170,7 +382,6 @@
 }
 
 /* слайдер с картинками  */
-
 .pic-slider__wrapper {
   margin: 0 auto 64px;
   max-width: 1156px;
@@ -211,7 +422,6 @@
   max-width: 920px;
   min-width: 328px;
   margin: 0 auto;
-  padding-bottom: 120px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -267,17 +477,12 @@
 
 @media (max-width: 1120px) {
   .capabilities__wrapper-2 {
-    margin: 64px 0;
-  }
-
-  .compare__wrapper {
-    padding-bottom: 64px;
+    padding: 64px 0;
   }
 
   .compare__h2 {
     font-size: 36px;
     line-height: 43.2px;
-    padding-top: 64px;
   }
 
   .compare__p {
@@ -303,11 +508,11 @@
   }
 }
 
-/* ***Возможности: третий блок*** */
-
+/* *************   Возможности: третий блок   ********** */
 .capabilities__wrapper-3 {
   min-width: var(--min-width);
-  margin: 120px auto;
+  margin: 0 auto;
+  padding: 120px 0;
 }
 
 .pros__wrapper {
@@ -362,7 +567,6 @@
   line-height: 23.8px;
   color: var(--color-text-middle);
   opacity: 0.5;
-  text-align: left;
 }
 
 .mobile__img-wrapper {
@@ -381,13 +585,14 @@
 
 @media (max-width: 1440px) {
   .capabilities__wrapper-3 {
-    padding: 0 23px 0 24px;
+    padding: 120px 23px 120px 24px;
   }
 }
 
 @media (max-width: 1120px) {
   .capabilities__wrapper-3 {
-    margin: 64px 0;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .pros__wrapper {
@@ -415,6 +620,7 @@
 
   .mobile__p {
     margin: 0 0 32px;
+    text-align: left;
   }
 }
 
@@ -424,8 +630,7 @@
   }
 }
 
-/* Поддержка */
-
+/* ***************   Поддержка   ************* */
 .support__wrapper {
   margin: 0 auto;
   max-width: var(--max-width);
@@ -542,11 +747,11 @@
   }
 }
 
-/* Тарифы */
-
+/* ******************   Тарифы   *************** */
 .plans {
   max-width: 1156px;
-  margin: 80px auto;
+  margin: 0 auto;
+  padding: 80px 0;
 }
 
 .plans__h2 {
@@ -690,13 +895,14 @@
 
 @media (max-width: 1210px) {
   .plans {
-    margin: 80px 23px 80px 24px;
+    margin: 0 23px 0 24px;
   }
 }
 
 @media (max-width: 1120px) {
   .plans {
-    margin: 48px 23px 64px 24px;
+    margin: 0 23px 0 24px;
+    padding: 48px 0 64px;
   }
   .plans__h2 {
     font-size: 36px;
@@ -717,8 +923,7 @@
   }
 }
 
-/* Отзывы */
-
+/* ********************   Отзывы   ***************** */
 .feedback__h2 {
   margin: 0 0 40px;
   font-size: 48px;
